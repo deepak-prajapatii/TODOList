@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_design"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/registration_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_design"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <EditText
+        android:id="@+id/registration_email"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/inputs"
+        android:drawableStart="@drawable/email"
+        android:drawableLeft="@drawable/email"
+        android:drawablePadding="10dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="15dp" />
+
+    <EditText
+        android:id="@+id/registration_password"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/inputs"
+        android:drawableStart="@drawable/lock"
+        android:drawableLeft="@drawable/lock"
+        android:drawablePadding="10dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="15dp" />
+
+    <Button
+        android:id="@+id/signUp_button"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#2881BF"
+        android:padding="15dp"
+        android:text="Signup"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/login_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="50dp"
+        android:text="Already have an acocunt"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+
+</LinearLayout>
